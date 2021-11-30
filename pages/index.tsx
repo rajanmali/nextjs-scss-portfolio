@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Portfolio for Bill Buttlicker" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Home
+      <div>Home</div>
     </>
   );
 };

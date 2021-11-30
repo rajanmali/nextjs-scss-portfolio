@@ -5,4 +5,6 @@ export const LayoutWrapper = styled.div`
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
+
+  height: 100vh;
 `;
