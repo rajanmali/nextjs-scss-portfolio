@@ -5,7 +5,7 @@ export const SidebarWrapper = styled.div`
 
   color: white;
 
-  width: 20%;
+  width: 15%;
   margin: 0;
 
   padding: 0 20px;

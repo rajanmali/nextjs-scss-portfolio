@@ -1,5 +1,9 @@
 import { FC } from 'react';
 
+// Icons
+import { FiTwitter, FiGithub } from 'react-icons/fi';
+import { FaMediumM } from 'react-icons/fa';
+
 // Styles
 import {
   SidebarWrapper,
@@ -26,9 +30,15 @@ const Sidebar: FC = () => {
         </SidebarNavMenu>
       </SidebarNavWrapper>
       <SidebarSocialWrapper>
-        <SidebarSocialIcon>Twitter</SidebarSocialIcon>
-        <SidebarSocialIcon>Github</SidebarSocialIcon>
-        <SidebarSocialIcon>Medium</SidebarSocialIcon>
+        <SidebarSocialIcon>
+          <FiTwitter />
+        </SidebarSocialIcon>
+        <SidebarSocialIcon>
+          <FiGithub />
+        </SidebarSocialIcon>
+        <SidebarSocialIcon>
+          <FaMediumM />
+        </SidebarSocialIcon>
       </SidebarSocialWrapper>
       <SidebarFooter>
         <SidebarFooterHeading>
