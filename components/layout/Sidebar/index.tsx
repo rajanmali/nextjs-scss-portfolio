@@ -20,6 +20,9 @@ import {
   SidebarFooterHeading,
 } from './Sidebar.styles';
 
+// Constants
+import { navItems, socialItems } from 'constants/index';
+
 const Sidebar: FC = () => {
   const [showDrawer, setShowDrawer] = useState(false);
   const router = useRouter();
@@ -27,21 +30,6 @@ const Sidebar: FC = () => {
   const toggleDrawer = () => {
     setShowDrawer(!showDrawer);
   };
-
-  const navItems = [
-    { id: 'nav-item-0', label: 'Home', path: '/' },
-    { id: 'nav-item-1', label: 'About', path: '/about' },
-    { id: 'nav-item-2', label: 'Portfolio', path: '/portfolio' },
-    { id: 'nav-item-3', label: 'Contact', path: '/contact' },
-  ];
-
-  const socialItems = [
-    { id: 'social-item-0', icon: <FiTwitter />, color: '#00acee' },
-    { id: 'social-item-1', icon: <FiGithub />, color: '#6e5494' },
-    { id: 'social-item-2', icon: <FaMediumM />, color: '#66CDAA' },
-  ];
-
-  console.log();
 
   return (
     <SidebarWrapper>
@@ -72,9 +60,17 @@ const Sidebar: FC = () => {
       </SidebarNavWrapper>
       <SidebarSocialWrapper>
         {socialItems.map((item) => (
-          <SidebarSocialIcon key={item.id} color={item.color}>
-            {item.icon}
-          </SidebarSocialIcon>
+          <a
+            href={item.path}
+            target="_blank"
+            rel="noreferrer"
+            key={item.id}
+            className="social-icon__link"
+          >
+            <SidebarSocialIcon color={item.color}>
+              {item.icon}
+            </SidebarSocialIcon>
+          </a>
         ))}
       </SidebarSocialWrapper>
       <SidebarFooter>

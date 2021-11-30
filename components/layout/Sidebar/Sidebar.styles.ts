@@ -18,6 +18,8 @@ export const SidebarWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
 
+    position: sticky;
+
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 `;
@@ -40,12 +42,13 @@ export const SidebarLogoWrapper = styled.div`
   }
 `;
 
-export const SidebarLogo = styled.h1`
+export const SidebarLogo = styled.h2`
   cursor: pointer;
 
   transition: all 0.2s ease;
 
   margin: 12px 0;
+  white-space: nowrap;
 
   &:hover {
     color: #ffefcb;
@@ -95,11 +98,13 @@ export const SidebarMenuItem = styled.li<{ active?: boolean }>`
 
   &:hover {
     color: #ffefcb;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
   }
 
   @media only screen and (max-width: 768px) {
-    margin-right: 24px;
+    margin-right: 20px;
+
+    font-size: 16px;
   }
 `;
 
@@ -107,6 +112,11 @@ export const SidebarSocialWrapper = styled.div`
   display: flex;
   width: 100%;
   margin: 8px 0;
+
+  .social-icon__link {
+    color: white;
+    text-decoration: none;
+  }
 
   @media only screen and (max-width: 768px) {
     display: none;

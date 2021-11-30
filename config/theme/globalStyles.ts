@@ -1,5 +1,4 @@
-// globalStyles.js
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
  *,
@@ -8,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0; 
     padding: 0;
     box-sizing: inherit;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
     background: #fffbf1;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
+`;
+
+export const ContentWrapper = styled.div`
+  width: 85%;
 `;
 
 export default GlobalStyle;
