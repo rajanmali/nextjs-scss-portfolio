@@ -1,7 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 
-const Sidebar = () => {
-  return <div>Sidebar</div>;
+// Styles
+import { SidebarWrapper } from './Sidebar.styles';
+
+const Sidebar: FC = () => {
+  return <SidebarWrapper>Sidebar</SidebarWrapper>;
 };
 
 export default Sidebar;
