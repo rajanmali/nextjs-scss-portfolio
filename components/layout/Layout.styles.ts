@@ -7,4 +7,12 @@ export const LayoutWrapper = styled.div`
   align-items: stretch;
 
   height: 100vh;
+
+  @media only screen and (max-width: 768px) {
+    flex-flow: column wrap;
+    justify-content: stretch;
+
+    width: 100vw;
+    height: auto;
+  }
 `;
