@@ -3,9 +3,12 @@ import Head from 'next/head';
 // Types
 import type { NextPage } from 'next';
 
+// Styles
+import { ContentWrapper } from 'config/theme/globalStyles';
+
 const Contact: NextPage = () => {
   return (
-    <>
+    <ContentWrapper>
       <Head>
         <title>Contact | Bill Buttlicker</title>
         <meta
@@ -14,8 +17,8 @@ const Contact: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Contact
-    </>
+      <h1>Contact</h1>
+    </ContentWrapper>
   );
 };
 

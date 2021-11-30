@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
-export const SidebarWrapper = styled.div`
+export const SidebarWrapper = styled.aside`
   background: #222;
-
   color: white;
 
   width: 15%;
-  margin: 0;
+  height: 100%;
 
-  padding: 0 20px;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 10px 20px;
 
   display: flex;
   flex-flow: column wrap;
@@ -17,8 +19,6 @@ export const SidebarWrapper = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-
-    position: sticky;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
@@ -48,7 +48,6 @@ export const SidebarLogo = styled.h2`
   transition: all 0.2s ease;
 
   margin: 12px 0;
-  white-space: nowrap;
 
   &:hover {
     color: #ffefcb;

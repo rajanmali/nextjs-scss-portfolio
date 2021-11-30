@@ -18,8 +18,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const ContentWrapper = styled.div`
-  width: 85%;
+export const ContentWrapper = styled.main`
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 60px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
 `;
 
 export default GlobalStyle;

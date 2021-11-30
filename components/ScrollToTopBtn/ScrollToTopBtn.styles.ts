@@ -6,8 +6,8 @@ export const ScorllToTopBtnWrapper = styled.button`
     display: block;
 
     position: fixed;
-    right: 5%;
-    bottom: 5%;
+    right: 8%;
+    bottom: 10%;
 
     background: none;
     outline: none;
